@@ -9,5 +9,6 @@
 - change robots.ts
 - change sitemap.ts
 - decide on a theme
+- uninstall unused package
 - delete unused file & folder
 - delete this todo list
