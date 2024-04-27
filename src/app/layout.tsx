@@ -12,20 +12,12 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   title: {
-    default: "alpha-code",
-    template: `%s | alpha-code`,
+    default: "alpha code",
+    template: `%s | alpha code`,
   },
   icons: "/image/favicon.ico",
-  description:
-    "Aldy Alfarizy is a Web Designer & Web Developer based in Jakarta, Indonesia, with expertise in web development. He creates high-quality website and web application. His focus is on TypeScript, React, Next.js, TailwindCSS, Redux, Prisma, and PostgreSQL. In his spare time, he enjoys coding on his projects.",
-  keywords: [
-    "Aldy Alfarizy",
-    "Aldy",
-    "Alfarizy",
-    "alpharizy",
-    "Portfolio Web",
-    "Website Portofolio",
-  ],
+  description: "The versatile boilerplate code.",
+  keywords: ["Aldy Alfarizy", "alpha code"],
   applicationName: "alpha-code",
   authors: [{ name: "Aldy Alfarizy", url: "https://alpharizy.com" }],
   creator: "Aldy Alfarizy",
@@ -38,27 +30,27 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://alpharizy.com",
     title: "alpharizy",
-    description: "Aldy Alfarizy's Portfolio Website",
+    description: "Aldy Alfarizy's Boilerplate Code",
     siteName: "alpharizy",
-    images: "https://res.cloudinary.com/",
+    images: "https://",
   },
   twitter: {
     card: "summary_large_image",
-    site: "alpharizy.com",
+    site: "alpha code.com",
     creator: "Aldy Alfarizy",
-    title: "alpharizy",
-    description: "Aldy Alfarizy's Portfolio Website",
-    images: "https://res.cloudinary.com/",
+    title: "alpha code",
+    description: "Aldy Alfarizy's Boilerplate Code",
+    images: "https://",
   },
   appleWebApp: {
     capable: true,
-    title: "alpharizy",
+    title: "alpha code",
     statusBarStyle: "black",
   },
   referrer: "origin",
-  category: "Portfolio",
-  classification: "Portfolio",
-  bookmarks: "https://alpharizy.com/bookmarks",
+  category: "Starter Project",
+  classification: "Starter Project",
+  bookmarks: "https://alpha-code.com/bookmarks",
 };
 
 export default function RootLayout({
@@ -70,7 +62,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "dark min-h-screen overflow-x-hidden bg-background font-sans antialiased selection:bg-muted-foreground",
+          "dark container min-h-screen overflow-x-hidden bg-background font-sans antialiased selection:bg-muted-foreground",
           fontSans.variable,
         )}
         suppressHydrationWarning

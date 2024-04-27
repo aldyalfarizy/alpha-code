@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://www.alpharizy.com/profile",
+      url: "https://www.alpharizy.com/legal",
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.3,
