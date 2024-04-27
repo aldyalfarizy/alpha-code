@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 
 import "../styles/globals.css";
 
@@ -18,7 +18,14 @@ export const metadata: Metadata = {
   icons: "/image/favicon.ico",
   description:
     "Aldy Alfarizy is a Web Designer & Web Developer based in Jakarta, Indonesia, with expertise in web development. He creates high-quality website and web application. His focus is on TypeScript, React, Next.js, TailwindCSS, Redux, Prisma, and PostgreSQL. In his spare time, he enjoys coding on his projects.",
-  keywords: ["Aldy Alfarizy", "Aldy", "Alfarizy", "alpharizy", "Portfolio Web", "Website Portofolio"],
+  keywords: [
+    "Aldy Alfarizy",
+    "Aldy",
+    "Alfarizy",
+    "alpharizy",
+    "Portfolio Web",
+    "Website Portofolio",
+  ],
   applicationName: "alpha-code",
   authors: [{ name: "Aldy Alfarizy", url: "https://alpharizy.com" }],
   creator: "Aldy Alfarizy",
@@ -62,7 +69,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("min-h-screen bg-background font-sans overflow-x-hidden antialiased selection:bg-muted-foreground dark", fontSans.variable)}
+        className={cn(
+          "dark min-h-screen overflow-x-hidden bg-background font-sans antialiased selection:bg-muted-foreground",
+          fontSans.variable,
+        )}
         suppressHydrationWarning
       >
         {children}

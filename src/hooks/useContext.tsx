@@ -1,26 +1,22 @@
-import React, { createContext, useContext, ReactNode } from "react";
-
-type Example = {
-  x: string;
-};
+import React, { createContext, ReactNode, useState } from "react";
 
 type MyContextProviderProps = {
-  value: Example;
   children: ReactNode;
 };
 
-const Context = createContext<Example | undefined>(undefined);
-
-export const MyContextProvider: React.FC<MyContextProviderProps> = ({ value, children }) => {
-  return <Context.Provider value={value}>{children}</Context.Provider>;
+type x = {
+  globalState: string;
+  updateGlobalState: (newValue: string) => void;
 };
 
-export function useMyContext() {
-  const example = useContext(Context);
+export const Context = createContext<x | undefined>(undefined);
 
-  if (!example) {
-    throw new Error("useMyContext must be used within a MyContextProvider");
-  }
+export const MyContextProvider: React.FC<MyContextProviderProps> = ({ children }) => {
+  const [globalState, setGlobalState] = useState<string>("test");
 
-  return example;
-}
+  const updateGlobalState = (newValue: string) => {
+    setGlobalState(newValue);
+  };
+
+  return <Context.Provider value={{ globalState, updateGlobalState }}>{children}</Context.Provider>;
+};
