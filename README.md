@@ -4,6 +4,7 @@
 
 ### TODO
 
+- use type
 - change the project name
 - change the meta tags
 - change robots.ts
