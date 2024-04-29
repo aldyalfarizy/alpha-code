@@ -13,3 +13,16 @@
 - uninstall unused package
 - delete unused file & folder
 - delete this todo list
+
+## Font
+
+### Headline
+
+- Playfair Display
+- Roxborough CF
+
+### Paragraph
+
+- Inter
+- Lato
+- Visby CF
