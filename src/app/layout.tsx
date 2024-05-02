@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import { cn } from "@/utils/cn";
 
 import "../styles/globals.css";
@@ -68,7 +70,9 @@ export default function RootLayout({
         )}
         suppressHydrationWarning
       >
+        {/* <Navbar /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
