@@ -33,6 +33,13 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --sb-track-color: 0, 0%, 100%;
+    --sb-thumb-color: 0, 0%, 0%;
+    --sb-radius-thumb: 30px;
+    --sb-radius-track: 0px;
+    --sb-border-thumb: 5px;
+    --sb-size: 14px;
   }
 
   .dark {
@@ -63,16 +70,43 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --sb-track-color: 0, 0%, 0%;
+    --sb-thumb-color: 0, 0%, 100%;
   }
+
   * {
     @apply border-border;
   }
+
   html {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+
+  body::-webkit-scrollbar {
+    width: var(--sb-size);
+  }
+
+  body::-webkit-scrollbar-track {
+    background: hsl(var(--sb-track-color));
+    border-radius: var(--sb-radius-track);
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background: hsl(var(--sb-thumb-color));
+    border-radius: var(--sb-radius-thumb);
+    border: var(--sb-border-thumb) solid hsl(var(--sb-track-color));
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    body {
+      scrollbar-color: hsl(var(--sb-thumb-color)) hsl(var(--sb-track-color));
+    }
   }
 }
 
@@ -80,10 +114,12 @@
   .text-balance {
     text-wrap: balance;
   }
+
   .no-scrollbar {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
