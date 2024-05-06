@@ -11,12 +11,18 @@ type x = {
 
 export const Context = createContext<x | undefined>(undefined);
 
-export const MyContextProvider: React.FC<MyContextProviderProps> = ({ children }) => {
+export const MyContextProvider: React.FC<MyContextProviderProps> = ({
+  children,
+}) => {
   const [globalState, setGlobalState] = useState<string>("test");
 
   const updateGlobalState = (newValue: string) => {
     setGlobalState(newValue);
   };
 
-  return <Context.Provider value={{ globalState, updateGlobalState }}>{children}</Context.Provider>;
+  return (
+    <Context.Provider value={{ globalState, updateGlobalState }}>
+      {children}
+    </Context.Provider>
+  );
 };
