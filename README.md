@@ -5,6 +5,7 @@
 ### TODO
 
 - use type
+- use ch unit for copy
 - change the project name
 - change the meta tags
 - change robots.ts

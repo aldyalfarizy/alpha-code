@@ -5,7 +5,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { cn } from "@/utils/cn";
 
-import "../styles/globals.css";
+import "../style/globals.css";
 
 const fontSans = FontSans({ subsets: ["latin"], variable: "--font-sans" });
 
