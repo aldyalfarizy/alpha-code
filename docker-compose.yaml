@@ -1,0 +1,50 @@
+version: "3.8"
+
+services:
+  alpha-container-web:
+    container_name: ${APP_NAME}-container-web
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    image: ${APP_NAME}-image
+    restart: always
+    ports:
+      - "${APP_PORT}:3000"
+    volumes:
+      - ${APP_NAME}-volume:/var/storage
+    networks:
+      - ${APP_NAME}-network
+    deploy:
+      resources:
+        limits:
+          cpus: "3"
+          memory: 6G
+
+  alpha-container-database:
+    container_name: ${APP_NAME}-container-database
+    image: postgres:16.3
+    restart: always
+    ports:
+      - "${DB_PORT}:5432"
+    shm_size: 512MB
+    environment:
+      - POSTGRES_PASSWORD=db${DB_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE}
+    volumes:
+      - "${APP_NAME}-volume:/var/lib/postgresql/data"
+    networks:
+      - ${APP_NAME}-network
+    deploy:
+      resources:
+        limits:
+          cpus: "3"
+          memory: 6G
+
+volumes:
+  alpha-volume:
+    name: ${APP_NAME}-volume
+
+networks:
+  alpha-network:
+    name: ${APP_NAME}-network
+    driver: bridge

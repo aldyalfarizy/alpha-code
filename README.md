@@ -10,6 +10,7 @@
 - change the meta tags
 - change robots.ts
 - change sitemap.ts
+- change docker-compose.yaml
 - decide on a theme
 - uninstall unused package
 - delete unused file & folder
