@@ -28,3 +28,13 @@
 - Inter
 - Lato
 - Visby CF
+- Jakarta Sans
+- Satoshi
+- Helvetica
+- Helvetica Now by Monotype
+- Ubuntu
+- Azonix
+- Mona Sans
+- Maximum Impact
+- syne
+- General Sans
