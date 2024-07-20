@@ -1,0 +1,97 @@
+{
+  "workbench.settings.editor": "json",
+
+  // Theme
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "vscode-icons",
+
+  // Font
+  "editor.fontFamily": "Fira Code",
+  "scm.inputFontFamily": "Fira Code",
+  "chat.editor.fontFamily": "Fira Code",
+  "debug.console.fontFamily": "Fira Code",
+  "editor.codeLensFontFamily": "Fira Code",
+  "notebook.output.fontFamily": "Fira Code",
+  "markdown.preview.fontFamily": "Fira Code",
+  "editor.inlayHints.fontFamily": "Fira Code",
+  "terminal.integrated.fontFamily": "Fira Code",
+
+  // Font Size
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+
+  // UI
+  "window.commandCenter": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.scrollbar.horizontal": "auto",
+  // "workbench.activityBar.location": "top",
+
+  // APC
+  "apc.activityBar": {
+    "position": "top",
+    "size": 35,
+    "itemSize": 28,
+    "itemMargin": 1
+  },
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "frame": false
+    // "trafficLightPosition": {
+    //   "x": 13,
+    //   "y": 10
+    // }
+  },
+  "apc.font.family": "Fira Code",
+  "apc.monospace.font.family": "Fira Code",
+  "apc.sidebar.titlebar": {
+    "fontSize": 14,
+    "height": 28
+  },
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "height": 28,
+    "fontSize": 14
+  },
+
+  // Custom CSS
+  "apc.stylesheet": {
+    ".sidebar > .composite": "height: 32px !important",
+    ".titlebar-center": "display: none !important",
+    ".titlebar-right": "display: none !important",
+    ".inline-tabs-placeholder": "display: none !important",
+    ".split-view-view .visible": "bacground-color: #888888 !important",
+    ".title-label": "display: none !important"
+    // ".title-actions": "display: none !important",
+  },
+
+  // Miscellaneous
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": true
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.highlightActiveBracketPair": true,
+  "editor.guides.indentation": true,
+  // "editor.guides.bracketPairsHorizontal": true,
+  "window.zoomLevel": -1.8
+
+  // External Theme Customization
+  // "workbench.colorCustomizations": {
+  //   "[Noctis Minimus]": {
+  //     "editor.background": "#000000",
+  //     "terminal.background": "#000000",
+  //     "activityBar.background": "#000000",
+  //     "statusBar.background": "#000000",
+  //     "editorGroupHeader.tabsBackground": "#000000",
+  //     "editorGroupHeader.tabsBorder": "#000000",
+  //     "tab.inactiveBackground": "#000000"
+  //   }
+  // },
+}
+
+// Required Plugins: Apc Customize UI++ & Github Theme
+
+// Required Font: Fira Code

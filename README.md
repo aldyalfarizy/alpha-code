@@ -14,6 +14,8 @@
 - decide on a theme
 - uninstall unused package
 - delete unused file & folder
+- check next.config.mjs
+- change babel.config.txt to .js before testing
 - delete this todo list
 
 ## Font
