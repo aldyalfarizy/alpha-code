@@ -30,7 +30,7 @@
 - Inter
 - Lato
 - Visby CF
-- Jakarta Sans
+- Plus Jakarta Sans
 - Satoshi
 - Helvetica
 - Helvetica Now by Monotype
@@ -38,5 +38,4 @@
 - Azonix
 - Mona Sans
 - Maximum Impact
-- syne
 - General Sans

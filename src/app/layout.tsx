@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter } from "next/font/google";
 
-import Navbar from "@/components/layout/Navbar";
+// import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { cn } from "@/utils/cn";
 
@@ -10,13 +10,11 @@ import "./globals.css";
 const fontHeadline = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-headline",
-  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const fontParagraph = Inter({
   subsets: ["latin"],
   variable: "--font-paragraph",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -75,7 +73,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "font-paragraph dark container min-h-screen overflow-x-hidden bg-background antialiased selection:bg-muted-foreground",
+          "dark container min-h-screen overflow-x-hidden bg-background font-paragraph antialiased selection:bg-muted-foreground",
           fontHeadline.variable,
           fontParagraph.variable,
         )}
