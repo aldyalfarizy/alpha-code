@@ -76,7 +76,7 @@
   "editor.guides.highlightActiveBracketPair": true,
   "editor.guides.indentation": true,
   // "editor.guides.bracketPairsHorizontal": true,
-  "window.zoomLevel": -1.8
+  "window.zoomLevel": -1.4
 
   // External Theme Customization
   // "workbench.colorCustomizations": {
@@ -93,5 +93,6 @@
 }
 
 // Required Plugins: Apc Customize UI++ & Github Theme
+
 
 // Required Font: Fira Code

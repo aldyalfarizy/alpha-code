@@ -26,7 +26,18 @@ export const metadata: Metadata = {
     default: "alpha code",
     template: `%s | alpha code`,
   },
-  icons: "/image/favicon.ico",
+  icons: {
+    icon: [
+      {
+        media: "(prefers-color-scheme: light)",
+        url: "/images/favicon.ico",
+      },
+      {
+        media: "(prefers-color-scheme: dark)",
+        url: "/images/favicon.ico",
+      },
+    ],
+  },
   description: "The versatile boilerplate code.",
   keywords: ["Aldy Alfarizy", "alpha code"],
   applicationName: "alpha-code",
@@ -43,7 +54,7 @@ export const metadata: Metadata = {
     title: "alpharizy",
     description: "Aldy Alfarizy's Boilerplate Code",
     siteName: "alpharizy",
-    images: "https://",
+    // images: "https://",
   },
   twitter: {
     card: "summary_large_image",
@@ -51,12 +62,7 @@ export const metadata: Metadata = {
     creator: "Aldy Alfarizy",
     title: "alpha code",
     description: "Aldy Alfarizy's Boilerplate Code",
-    images: "https://",
-  },
-  appleWebApp: {
-    capable: true,
-    title: "alpha code",
-    statusBarStyle: "black",
+    // images: "https://",
   },
   referrer: "origin",
   category: "Starter Project",
@@ -70,14 +76,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
           "dark container min-h-screen overflow-x-hidden bg-background font-paragraph antialiased selection:bg-muted-foreground",
           fontHeadline.variable,
           fontParagraph.variable,
         )}
-        suppressHydrationWarning
       >
         {/* <Navbar /> */}
         {children}
