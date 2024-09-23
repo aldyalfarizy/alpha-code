@@ -5,12 +5,10 @@ const config = {
   content: ["./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+    screens: {
+      tablet: "768px",
+      laptop: "1024px",
+      desktop: "1536px",
     },
     extend: {
       fontFamily: {

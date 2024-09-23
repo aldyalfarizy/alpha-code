@@ -79,7 +79,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "dark container min-h-screen overflow-x-hidden bg-background font-paragraph antialiased selection:bg-muted-foreground",
+          "min-h-screen overflow-x-hidden bg-background font-paragraph antialiased selection:bg-muted-foreground",
           fontHeadline.variable,
           fontParagraph.variable,
         )}
